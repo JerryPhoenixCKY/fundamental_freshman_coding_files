@@ -5,11 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e6910a9-be44-4137-a88f-e97d3733eecb" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/a语法/deque.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基础/p1308.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基础/p1308题目.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基础/p1957.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基础/p5015题目.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/基础/as2q1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/基础/as2q2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/基础/as2q3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/基础/as3q1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/基础/as3q2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/基础/as3q3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/基础/optimization csc课例.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/基础/queue.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/基础/stack.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/基础/快速排序.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/基础/检查括号.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/基础/q1.py" beforeDir="false" afterPath="$PROJECT_DIR$/基础/q1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/基础/q2.py" beforeDir="false" afterPath="$PROJECT_DIR$/基础/q2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/基础/q3.py" beforeDir="false" afterPath="$PROJECT_DIR$/基础/q3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/基础/q4.py" beforeDir="false" afterPath="$PROJECT_DIR$/基础/as2q4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/基础/q5.py" beforeDir="false" afterPath="$PROJECT_DIR$/基础/as2q5.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,18 +40,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "JerryPhoenixCKY"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;JerryPhoenixCKY&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/JerryPhoenixCKY/pycharm_coding_files.git",
-    "accountId": "de19a1fb-9a0e-4c92-96a0-103b74b13a17"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/JerryPhoenixCKY/pycharm_coding_files.git&quot;,
+    &quot;accountId&quot;: &quot;de19a1fb-9a0e-4c92-96a0-103b74b13a17&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/数据验证.py" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -74,10 +86,12 @@
     "Python.Q4输出阶乘.executor": "Run",
     "Python.Q5最大整数.executor": "Run",
     "Python.Q6完全数.executor": "Run",
+    "Python.as3q3.executor": "Run",
     "Python.calculater.executor": "Run",
     "Python.k线模拟器.executor": "Run",
     "Python.object class.executor": "Run",
     "Python.opentxt.executor": "Run",
+    "Python.optimization csc课例.executor": "Run",
     "Python.p1075.executor": "Run",
     "Python.p1125.executor": "Run",
     "Python.p1308.executor": "Run",
@@ -93,6 +107,8 @@
     "Python.p5732.executor": "Run",
     "Python.q1.executor": "Run",
     "Python.q1count number.executor": "Run",
+    "Python.q2.executor": "Run",
+    "Python.q3.executor": "Run",
     "Python.q4.executor": "Run",
     "Python.shopping cart.executor": "Debug",
     "Python.sort value.executor": "Run",
@@ -103,13 +119,16 @@
     "Python.凯撒密码.executor": "Run",
     "Python.函数相关.executor": "Run",
     "Python.删除英文字符保留中文.executor": "Run",
+    "Python.基于Python的图片云生成器.executor": "Run",
     "Python.字符串拼接.executor": "Run",
     "Python.异常处理.executor": "Debug",
+    "Python.快速排序.executor": "Run",
     "Python.找最大值.executor": "Run",
     "Python.数据验证.executor": "Run",
     "Python.文字检索.executor": "Run",
     "Python.权限控制.executor": "Debug",
     "Python.格式化字符串.executor": "Run",
+    "Python.检查括号.executor": "Run",
     "Python.正则表达式用法.executor": "Run",
     "Python.生成器.executor": "Run",
     "Python.类.executor": "Run",
@@ -132,7 +151,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "run.code.analysis.last.selected.profile": "aDefault",
-    "settings.editor.selected.configurable": "preferences.customizations",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
@@ -144,30 +163,7 @@
       <recent name="D:\pycharm coding files" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.p1308">
-    <configuration name="Q1打印偶数" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="pycharm coding files" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Q1打印偶数.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.as3q3">
     <configuration name="Q2检查质数" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pycharm coding files" />
       <option name="ENV_FILES" value="" />
@@ -191,7 +187,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="权限控制" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="as3q3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pycharm coding files" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -205,7 +201,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/基础/权限控制.py" />
+      <option name="SCRIPT_NAME" value="D:\pycharm coding files\基础\as3q3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -285,11 +281,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.p1308" />
+        <item itemvalue="Python.as3q3" />
         <item itemvalue="Python.calculater" />
+        <item itemvalue="Python.p1308" />
         <item itemvalue="Python.sort value" />
         <item itemvalue="Python.Q2检查质数" />
-        <item itemvalue="Python.Q1打印偶数" />
       </list>
     </recent_temporary>
   </component>
@@ -330,6 +326,13 @@
       <workItem from="1761738283867" duration="44421000" />
       <workItem from="1762162723201" duration="42365000" />
       <workItem from="1762691022029" duration="33756000" />
+      <workItem from="1763025202998" duration="1550000" />
+      <workItem from="1763359937083" duration="34328000" />
+      <workItem from="1764150213522" duration="1124000" />
+      <workItem from="1764294439618" duration="7000" />
+      <workItem from="1764294612703" duration="9671000" />
+      <workItem from="1764637183948" duration="5539000" />
+      <workItem from="1764740075763" duration="4011000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <option name="closed" value="true" />
@@ -388,44 +391,49 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/pycharm_coding_files$Python.coverage" NAME="基于Python的图片云生成器 覆盖结果" MODIFIED="1764654794410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基础" />
     <SUITE FILE_PATH="coverage/pycharm_coding_files$p5729.coverage" NAME="p5729 覆盖结果" MODIFIED="1762134143146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基础" />
     <SUITE FILE_PATH="coverage/pycharm_coding_files$1_1_.coverage" NAME="1(1) 覆盖结果" MODIFIED="1758972625913" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../28695/weixin/xwechat_files/wxid_dk812z9rz65a22_dd9e/msg/file/2025-09" />
     <SUITE FILE_PATH="coverage/pycharm_coding_files$P1428.coverage" NAME="P1428 覆盖结果" MODIFIED="1761829069112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基础" />
     <SUITE FILE_PATH="coverage/pycharm_coding_files$Q1.coverage" NAME="Q1打印偶数 覆盖结果" MODIFIED="1759393703841" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pycharm_coding_files$optimization_csc.coverage" NAME="optimization csc课例 覆盖结果" MODIFIED="1764139082662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基础" />
     <SUITE FILE_PATH="coverage/pycharm_coding_files$Q4.coverage" NAME="Q4输出阶乘 覆盖结果" MODIFIED="1759572031010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pycharm_coding_files$p5732.coverage" NAME="p5732 覆盖结果" MODIFIED="1762752659135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基础" />
     <SUITE FILE_PATH="coverage/pycharm_coding_files$1_Palindrome_integer.coverage" NAME="1-Palindrome integer 覆盖结果" MODIFIED="1760004952768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../28695/OneDrive - CUHK-Shenzhen/资料/CSC1005/Solutions_TUT5" />
-    <SUITE FILE_PATH="coverage/pycharm_coding_files$q1.coverage" NAME="q1 覆盖结果" MODIFIED="1761905832877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基础" />
+    <SUITE FILE_PATH="coverage/pycharm_coding_files$q1.coverage" NAME="q1 覆盖结果" MODIFIED="1764599739092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基础" />
     <SUITE FILE_PATH="coverage/pycharm_coding_files$str_gramma.coverage" NAME="str gramma 覆盖结果" MODIFIED="1760507335400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基础" />
     <SUITE FILE_PATH="coverage/pycharm_coding_files$q4.coverage" NAME="q4 覆盖结果" MODIFIED="1761962699820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基础" />
     <SUITE FILE_PATH="coverage/pycharm_coding_files$2_to_k.coverage" NAME="2 to k 覆盖结果" MODIFIED="1758858669565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pycharm_coding_files$12.coverage" NAME="12 覆盖结果" MODIFIED="1762648688144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基础" />
+    <SUITE FILE_PATH="coverage/pycharm_coding_files$as3q3.coverage" NAME="as3q3 覆盖结果" MODIFIED="1764740944180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基础" />
     <SUITE FILE_PATH="coverage/pycharm_coding_files$object_class.coverage" NAME="object class 覆盖结果" MODIFIED="1761720438271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基础" />
     <SUITE FILE_PATH="coverage/pycharm_coding_files$p1957.coverage" NAME="p1957 覆盖结果" MODIFIED="1762937618267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基础" />
     <SUITE FILE_PATH="coverage/pycharm_coding_files$p1614.coverage" NAME="p1614 覆盖结果" MODIFIED="1762688816548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基础" />
     <SUITE FILE_PATH="coverage/pycharm_coding_files$p1554.coverage" NAME="p1554 覆盖结果" MODIFIED="1762685136090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基础" />
     <SUITE FILE_PATH="coverage/pycharm_coding_files$Q2.coverage" NAME="Q2检查质数 覆盖结果" MODIFIED="1759569984735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pycharm_coding_files$p1308.coverage" NAME="p1308 覆盖结果" MODIFIED="1762959405568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基础" />
-    <SUITE FILE_PATH="coverage/pycharm_coding_files$calculater.coverage" NAME="calculater 覆盖结果" MODIFIED="1762750430305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pycharm_coding_files$p1308.coverage" NAME="p1308 覆盖结果" MODIFIED="1763037132329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基础" />
+    <SUITE FILE_PATH="coverage/pycharm_coding_files$calculater.coverage" NAME="calculater 覆盖结果" MODIFIED="1764599724928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pycharm_coding_files$test_code.coverage" NAME="test code 覆盖结果" MODIFIED="1758797713958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pycharm_coding_files$year.coverage" NAME="year 覆盖结果" MODIFIED="1758847911826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pycharm_coding_files$opentxt.coverage" NAME="opentxt 覆盖结果" MODIFIED="1762567812151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基础" />
     <SUITE FILE_PATH="coverage/pycharm_coding_files$p1125.coverage" NAME="p1125 覆盖结果" MODIFIED="1762832928860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基础" />
     <SUITE FILE_PATH="coverage/pycharm_coding_files$Q5.coverage" NAME="Q5最大整数 覆盖结果" MODIFIED="1759582938391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pycharm_coding_files$sort_value.coverage" NAME="sort value 覆盖结果" MODIFIED="1761958027197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基础" />
+    <SUITE FILE_PATH="coverage/pycharm_coding_files$q2.coverage" NAME="q2 覆盖结果" MODIFIED="1763794645227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基础" />
     <SUITE FILE_PATH="coverage/pycharm_coding_files$1.coverage" NAME="1 覆盖结果" MODIFIED="1762650137847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基础" />
     <SUITE FILE_PATH="coverage/pycharm_coding_files$Q3.coverage" NAME="Q3打印数字图案 覆盖结果" MODIFIED="1759805532044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pycharm_coding_files$Q6.coverage" NAME="Q6完全数 覆盖结果" MODIFIED="1759809411675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pycharm_coding_files$p1789.coverage" NAME="p1789 覆盖结果" MODIFIED="1762828780995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基础" />
     <SUITE FILE_PATH="coverage/pycharm_coding_files$test_note.coverage" NAME="test note 覆盖结果" MODIFIED="1758786478427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../28695/OneDrive - CUHK-Shenzhen/资料/CSC1005" />
-    <SUITE FILE_PATH="coverage/pycharm_coding_files$.coverage" NAME="正则表达式用法 覆盖结果" MODIFIED="1762944174436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/a语法" />
+    <SUITE FILE_PATH="coverage/pycharm_coding_files$.coverage" NAME="快速排序 覆盖结果" MODIFIED="1763537337608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基础" />
     <SUITE FILE_PATH="coverage/pycharm_coding_files$q1count_number.coverage" NAME="q1count number 覆盖结果" MODIFIED="1761215973969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基础" />
-    <SUITE FILE_PATH="coverage/pycharm_coding_files$k.coverage" NAME="k线模拟器 覆盖结果" MODIFIED="1762833461076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基础" />
+    <SUITE FILE_PATH="coverage/pycharm_coding_files$k.coverage" NAME="k线模拟器 覆盖结果" MODIFIED="1763037142383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基础" />
     <SUITE FILE_PATH="coverage/pycharm_coding_files$p2615.coverage" NAME="p2615 覆盖结果" MODIFIED="1762317954021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基础" />
     <SUITE FILE_PATH="coverage/pycharm_coding_files$shopping_cart.coverage" NAME="shopping cart 覆盖结果" MODIFIED="1758853111720" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pycharm_coding_files$p1075.coverage" NAME="p1075 覆盖结果" MODIFIED="1762587184564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基础" />
     <SUITE FILE_PATH="coverage/pycharm_coding_files$p5728.coverage" NAME="p5728 覆盖结果" MODIFIED="1761887626664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基础" />
     <SUITE FILE_PATH="coverage/pycharm_coding_files$p2550.coverage" NAME="p2550 覆盖结果" MODIFIED="1762157073586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基础" />
     <SUITE FILE_PATH="coverage/pycharm_coding_files$p2141.coverage" NAME="p2141 覆盖结果" MODIFIED="1762687436383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基础" />
+    <SUITE FILE_PATH="coverage/pycharm_coding_files$q3.coverage" NAME="q3 覆盖结果" MODIFIED="1763801779434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/基础" />
   </component>
 </project>
