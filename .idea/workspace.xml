@@ -4,24 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e6910a9-be44-4137-a88f-e97d3733eecb" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/基础/as2q1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基础/as2q2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基础/as2q3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基础/as3q1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基础/as3q2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基础/as3q3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基础/optimization csc课例.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基础/queue.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基础/stack.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基础/快速排序.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基础/检查括号.py" afterDir="false" />
+    <list default="true" id="2e6910a9-be44-4137-a88f-e97d3733eecb" name="Changes" comment="changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/基础/q1.py" beforeDir="false" afterPath="$PROJECT_DIR$/基础/q1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/基础/q2.py" beforeDir="false" afterPath="$PROJECT_DIR$/基础/q2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/基础/q3.py" beforeDir="false" afterPath="$PROJECT_DIR$/基础/q3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/基础/q4.py" beforeDir="false" afterPath="$PROJECT_DIR$/基础/as2q4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/基础/q5.py" beforeDir="false" afterPath="$PROJECT_DIR$/基础/as2q5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/基础/q1.py" beforeDir="false" afterPath="$PROJECT_DIR$/基础/as4q1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/基础/q2.py" beforeDir="false" afterPath="$PROJECT_DIR$/基础/as4q2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/基础/q3.py" beforeDir="false" afterPath="$PROJECT_DIR$/基础/as4q3.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -332,7 +319,7 @@
       <workItem from="1764294439618" duration="7000" />
       <workItem from="1764294612703" duration="9671000" />
       <workItem from="1764637183948" duration="5539000" />
-      <workItem from="1764740075763" duration="4011000" />
+      <workItem from="1764740075763" duration="7751000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <option name="closed" value="true" />
@@ -358,7 +345,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762841673881</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="changes">
+      <option name="closed" value="true" />
+      <created>1764746652150</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1764746652150</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,7 +372,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes" />
+    <MESSAGE value="changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
