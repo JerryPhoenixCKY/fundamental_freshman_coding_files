@@ -78,3 +78,30 @@ def chemistry_queue_example():
 
 # Run the chemistry queue example
 chemistry_queue_example()
+
+###########################################################################################
+
+from collections import deque
+
+class Queue:
+    def __init__(self):
+        self._data = deque()
+
+    def enqueue(self, item):
+        self._data.append(item)  # O(1)
+
+    def dequeue(self):
+        if self.is_empty():
+            raise IndexError("Dequeue from empty queue")
+        return self._data.popleft()  # O(1)
+
+    def front(self):
+        if self.is_empty():
+            raise IndexError("Front from empty queue")
+        return self._data[0]
+
+    def is_empty(self):
+        return len(self._data) == 0
+
+    def size(self):
+        return len(self._data)

@@ -1,11 +1,14 @@
 def quickort(L, low, high):
-    if low < high:
-        # 分区操作，返回 pivot 的最终位置
-        pivot_index = partition(L, low, high)
-        # 递归排序左右两部分
-        quickort(L, low, pivot_index - 1)
-        quickort(L, pivot_index + 1, high)
-    return L
+   mid=low + (high - low) // 2
+   L[low],L[mid]=L[mid],L[low]
+
+   if low < high:
+       # 分区操作，返回 pivot 的最终位置
+       pivot_index = partition(L, low, high)
+       # 递归排序左右两部分
+       quickort(L, low, pivot_index - 1)
+       quickort(L, pivot_index + 1, high)
+   return L
 
 def partition(L, low, high):
     pivot = L[low]  # 选择第一个元素作为基准
