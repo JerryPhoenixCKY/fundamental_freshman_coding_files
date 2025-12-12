@@ -2,7 +2,7 @@ class ListQueue:
     default_capacity = 5
 
     def __init__(self):
-        self.__data = [None] * ListQueue.default_capacity
+        self.__data =[None] * ListQueue.default_capacity
         self.__size = 0
         self.__front = 0
         self.__end = 0

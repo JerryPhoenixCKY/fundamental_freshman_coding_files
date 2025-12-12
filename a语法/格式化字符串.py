@@ -9,7 +9,8 @@ print("姓名：{0},年龄:{1},成绩：{2}".format(name,age,score))
 s1='bigyunmountn'
 s2='specific'
 s3='conceivable'
-print('{0:*^30}\n{1:*<20}\n{2:*>40}'.format(s1,s2,s3))
+print('{0:*^30}\n{1:*<20}\n{2:*>40}'.format(s1,s2,s3))#数字是输出的字符串的总长，不是*的长度
+
 
 
 #千位分隔符
