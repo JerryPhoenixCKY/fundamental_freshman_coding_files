@@ -4,7 +4,7 @@ import os
 # 设置参数
 input_folder = r"C:\tmp"
 output_video = r"C:\tmp\output.mp4"
-fps = 24  # 每秒24帧
+fps = 36  # 每秒24帧
 
 # 获取所有 PNG 文件，并按文件名排序（确保顺序正确）
 images = [img for img in os.listdir(input_folder) if img.lower().endswith('.png')]

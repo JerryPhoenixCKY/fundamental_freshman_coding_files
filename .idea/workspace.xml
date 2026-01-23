@@ -5,23 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e6910a9-be44-4137-a88f-e97d3733eecb" name="Changes" comment="changes">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基础/洛谷题/P2415.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基础/洛谷题/p5735.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/基础/洛谷题/p5740.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/基础/多帧图像转化为视频.py" beforeDir="false" afterPath="$PROJECT_DIR$/基础/多帧图像转化为视频.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_D:/primary coding files" value="338opczln0gxYawP9cjaN9J021A" />
+    </persistenceIdMap>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Jupyter Notebook" />
         <option value="Python Script" />
+        <option value="Jupyter Notebook" />
       </list>
     </option>
   </component>
@@ -57,109 +59,109 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.1(1).executor": "Run",
-    "Python.1-Palindrome integer.executor": "Run",
-    "Python.1.executor": "Run",
-    "Python.12.executor": "Run",
-    "Python.2 to k.executor": "Run",
-    "Python.2.executor": "Run",
-    "Python.ChristmasTree01.executor": "Run",
-    "Python.ChristmasTree04_Green.executor": "Run",
-    "Python.P1428.executor": "Run",
-    "Python.P1428小鱼比可爱.executor": "Run",
-    "Python.Q1打印偶数.executor": "Run",
-    "Python.Q2检查质数.executor": "Run",
-    "Python.Q3打印数字图案.executor": "Run",
-    "Python.Q4输出阶乘.executor": "Run",
-    "Python.Q5最大整数.executor": "Run",
-    "Python.Q6完全数.executor": "Run",
-    "Python.as3q3.executor": "Run",
-    "Python.as4q3.executor": "Run",
-    "Python.calculater.executor": "Run",
-    "Python.csc1005期中复习.executor": "Run",
-    "Python.demo1.executor": "Run",
-    "Python.demo2.executor": "Run",
-    "Python.k线模拟器.executor": "Run",
-    "Python.minimize__(x-3)^2.executor": "Run",
-    "Python.object class.executor": "Run",
-    "Python.opentxt.executor": "Run",
-    "Python.optimization csc课例.executor": "Run",
-    "Python.p1075.executor": "Run",
-    "Python.p1125.executor": "Run",
-    "Python.p1308.executor": "Run",
-    "Python.p1554.executor": "Run",
-    "Python.p1614.executor": "Run",
-    "Python.p1789.executor": "Run",
-    "Python.p1957.executor": "Run",
-    "Python.p2141.executor": "Run",
-    "Python.p2550.executor": "Run",
-    "Python.p2615.executor": "Run",
-    "Python.p5728.executor": "Run",
-    "Python.p5729.executor": "Run",
-    "Python.p5732.executor": "Run",
-    "Python.p5735.executor": "Run",
-    "Python.p5740.executor": "Run",
-    "Python.pyinstxtractor.executor": "Run",
-    "Python.q1.executor": "Run",
-    "Python.q1count number.executor": "Run",
-    "Python.q2.executor": "Run",
-    "Python.q3.executor": "Run",
-    "Python.q4.executor": "Run",
-    "Python.shopping cart.executor": "Debug",
-    "Python.sort value.executor": "Run",
-    "Python.str gramma.executor": "Run",
-    "Python.test code.executor": "Run",
-    "Python.test note.executor": "Run",
-    "Python.year.executor": "Run",
-    "Python.凯撒密码.executor": "Run",
-    "Python.函数相关.executor": "Run",
-    "Python.删除英文字符保留中文.executor": "Run",
-    "Python.圣诞树.executor": "Run",
-    "Python.基于Python的图片云生成器.executor": "Run",
-    "Python.多帧图像转化为视频.executor": "Run",
-    "Python.字符串拼接.executor": "Run",
-    "Python.异常处理.executor": "Debug",
-    "Python.归并merge sort.executor": "Run",
-    "Python.快速排序.executor": "Run",
-    "Python.找最大值.executor": "Run",
-    "Python.数据验证.executor": "Run",
-    "Python.文字检索.executor": "Run",
-    "Python.权限控制.executor": "Debug",
-    "Python.格式化字符串.executor": "Run",
-    "Python.检查括号.executor": "Run",
-    "Python.正则表达式用法.executor": "Run",
-    "Python.生成器.executor": "Run",
-    "Python.生成并显示闪烁圣诞树图片.executor": "Run",
-    "Python.类.executor": "Run",
-    "Python.统计指定字符出现次数.executor": "Run",
-    "Python.继承方法实例.executor": "Run",
-    "Python.编码.executor": "Run",
-    "Python.自定义数据类型.executor": "Run",
-    "Python.进制转换.executor": "Run",
-    "Python.迭代器操作函数.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "master",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "D:/primary coding files",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "aDefault",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.1(1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.1-Palindrome integer.executor&quot;: &quot;Run&quot;,
+    &quot;Python.1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.12.executor&quot;: &quot;Run&quot;,
+    &quot;Python.2 to k.executor&quot;: &quot;Run&quot;,
+    &quot;Python.2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ChristmasTree01.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ChristmasTree04_Green.executor&quot;: &quot;Run&quot;,
+    &quot;Python.P1428.executor&quot;: &quot;Run&quot;,
+    &quot;Python.P1428小鱼比可爱.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Q1打印偶数.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Q2检查质数.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Q3打印数字图案.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Q4输出阶乘.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Q5最大整数.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Q6完全数.executor&quot;: &quot;Run&quot;,
+    &quot;Python.as3q3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.as4q3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.calculater.executor&quot;: &quot;Run&quot;,
+    &quot;Python.csc1005期中复习.executor&quot;: &quot;Run&quot;,
+    &quot;Python.demo1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.demo2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.k线模拟器.executor&quot;: &quot;Run&quot;,
+    &quot;Python.minimize__(x-3)^2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.object class.executor&quot;: &quot;Run&quot;,
+    &quot;Python.opentxt.executor&quot;: &quot;Run&quot;,
+    &quot;Python.optimization csc课例.executor&quot;: &quot;Run&quot;,
+    &quot;Python.p1075.executor&quot;: &quot;Run&quot;,
+    &quot;Python.p1125.executor&quot;: &quot;Run&quot;,
+    &quot;Python.p1308.executor&quot;: &quot;Run&quot;,
+    &quot;Python.p1554.executor&quot;: &quot;Run&quot;,
+    &quot;Python.p1614.executor&quot;: &quot;Run&quot;,
+    &quot;Python.p1789.executor&quot;: &quot;Run&quot;,
+    &quot;Python.p1957.executor&quot;: &quot;Run&quot;,
+    &quot;Python.p2141.executor&quot;: &quot;Run&quot;,
+    &quot;Python.p2550.executor&quot;: &quot;Run&quot;,
+    &quot;Python.p2615.executor&quot;: &quot;Run&quot;,
+    &quot;Python.p5728.executor&quot;: &quot;Run&quot;,
+    &quot;Python.p5729.executor&quot;: &quot;Run&quot;,
+    &quot;Python.p5732.executor&quot;: &quot;Run&quot;,
+    &quot;Python.p5735.executor&quot;: &quot;Run&quot;,
+    &quot;Python.p5740.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pyinstxtractor.executor&quot;: &quot;Run&quot;,
+    &quot;Python.q1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.q1count number.executor&quot;: &quot;Run&quot;,
+    &quot;Python.q2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.q3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.q4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.shopping cart.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.sort value.executor&quot;: &quot;Run&quot;,
+    &quot;Python.str gramma.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test code.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test note.executor&quot;: &quot;Run&quot;,
+    &quot;Python.year.executor&quot;: &quot;Run&quot;,
+    &quot;Python.凯撒密码.executor&quot;: &quot;Run&quot;,
+    &quot;Python.函数相关.executor&quot;: &quot;Run&quot;,
+    &quot;Python.删除英文字符保留中文.executor&quot;: &quot;Run&quot;,
+    &quot;Python.圣诞树.executor&quot;: &quot;Run&quot;,
+    &quot;Python.基于Python的图片云生成器.executor&quot;: &quot;Run&quot;,
+    &quot;Python.多帧图像转化为视频.executor&quot;: &quot;Run&quot;,
+    &quot;Python.字符串拼接.executor&quot;: &quot;Run&quot;,
+    &quot;Python.异常处理.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.归并merge sort.executor&quot;: &quot;Run&quot;,
+    &quot;Python.快速排序.executor&quot;: &quot;Run&quot;,
+    &quot;Python.找最大值.executor&quot;: &quot;Run&quot;,
+    &quot;Python.数据验证.executor&quot;: &quot;Run&quot;,
+    &quot;Python.文字检索.executor&quot;: &quot;Run&quot;,
+    &quot;Python.权限控制.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.格式化字符串.executor&quot;: &quot;Run&quot;,
+    &quot;Python.检查括号.executor&quot;: &quot;Run&quot;,
+    &quot;Python.正则表达式用法.executor&quot;: &quot;Run&quot;,
+    &quot;Python.生成器.executor&quot;: &quot;Run&quot;,
+    &quot;Python.生成并显示闪烁圣诞树图片.executor&quot;: &quot;Run&quot;,
+    &quot;Python.类.executor&quot;: &quot;Run&quot;,
+    &quot;Python.统计指定字符出现次数.executor&quot;: &quot;Run&quot;,
+    &quot;Python.继承方法实例.executor&quot;: &quot;Run&quot;,
+    &quot;Python.编码.executor&quot;: &quot;Run&quot;,
+    &quot;Python.自定义数据类型.executor&quot;: &quot;Run&quot;,
+    &quot;Python.进制转换.executor&quot;: &quot;Run&quot;,
+    &quot;Python.迭代器操作函数.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/primary coding files&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\pycharm coding files\语法" />
@@ -351,7 +353,10 @@
       <workItem from="1766328087405" duration="9132000" />
       <workItem from="1767343151817" duration="630000" />
       <workItem from="1767406028616" duration="2777000" />
-      <workItem from="1767444696209" duration="8998000" />
+      <workItem from="1767444696209" duration="10626000" />
+      <workItem from="1768612607020" duration="1206000" />
+      <workItem from="1768734024950" duration="594000" />
+      <workItem from="1769066061677" duration="949000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <option name="closed" value="true" />
@@ -425,7 +430,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768195778862</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="changes">
+      <option name="closed" value="true" />
+      <created>1768304404492</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1768304404492</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
