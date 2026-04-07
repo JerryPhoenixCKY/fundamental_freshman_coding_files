@@ -6,8 +6,9 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
 import tensorflow as tf
-from tensorflow.keras import layers, models
+from tensorflow import layers, models
 
 # Generate training data
 def generate_data(num_samples=1000):
@@ -57,7 +58,7 @@ def main():
     x_test, y_test = np.meshgrid(np.linspace(-10, 10, 50), np.linspace(-10, 10, 50))
     x_test_flat = x_test.ravel()  # Flatten the grid points
     y_test_flat = y_test.ravel()  # Flatten the grid points
-    z_true = x_test_flat**2 + y_test_flat**2  # True z values
+    z_true = x_test_flat**2 + 2*y_test_flat**2  # True z values
     z_pred = test_model(model, x_test_flat, y_test_flat).ravel()  # Predicted z values by the neural network
 
     # Plot the results
