@@ -21,6 +21,7 @@ static const double kFixedDt = 1.0 / 240.0;
 static const double kPi = 3.14159265358979323846;
 static const int kControlPanelWidth = 456;
 static const int kHeaderHeight = 72;
+static const int kRenderSupersampleScale = 2;
 
 enum {
 	IDC_BTN_TOGGLE = 1001,
@@ -492,17 +493,37 @@ static void ensure_backbuffer(AppState* app, HDC target, int width, int height) 
 	if (width <= 0 || height <= 0) {
 		return;
 	}
-	if (back->dc && back->width == width && back->height == height) {
+
+	int buffer_w = width * kRenderSupersampleScale;
+	int buffer_h = height * kRenderSupersampleScale;
+
+	if (back->dc && back->width == buffer_w && back->height == buffer_h) {
 		return;
 	}
 
 	destroy_backbuffer(back);
 
 	back->dc = CreateCompatibleDC(target);
-	back->bitmap = CreateCompatibleBitmap(target, width, height);
+	if (!back->dc) {
+		return;
+	}
+
+	back->bitmap = CreateCompatibleBitmap(target, buffer_w, buffer_h);
+	if (!back->bitmap) {
+		buffer_w = width;
+		buffer_h = height;
+		back->bitmap = CreateCompatibleBitmap(target, buffer_w, buffer_h);
+	}
+
+	if (!back->bitmap) {
+		DeleteDC(back->dc);
+		back->dc = NULL;
+		return;
+	}
+
 	back->old_bitmap = (HBITMAP)SelectObject(back->dc, back->bitmap);
-	back->width = width;
-	back->height = height;
+	back->width = buffer_w;
+	back->height = buffer_h;
 }
 
 static void compute_scene_layout(
@@ -1093,10 +1114,24 @@ static void render_frame(AppState* app, HDC target, int width, int height) {
 		return;
 	}
 
+	int back_saved = SaveDC(app->back.dc);
+	SetMapMode(app->back.dc, MM_ANISOTROPIC);
+	SetWindowExtEx(app->back.dc, width, height, NULL);
+	SetViewportExtEx(app->back.dc, app->back.width, app->back.height, NULL);
 	render_scene(app, app->back.dc, width, height);
+	RestoreDC(app->back.dc, back_saved);
+
 	int saved = SaveDC(target);
 	exclude_controls_from_dc(app, target);
-	BitBlt(target, 0, 0, width, height, app->back.dc, 0, 0, SRCCOPY);
+
+	if (app->back.width == width && app->back.height == height) {
+		BitBlt(target, 0, 0, width, height, app->back.dc, 0, 0, SRCCOPY);
+	} else {
+		SetStretchBltMode(target, HALFTONE);
+		SetBrushOrgEx(target, 0, 0, NULL);
+		StretchBlt(target, 0, 0, width, height, app->back.dc, 0, 0, app->back.width, app->back.height, SRCCOPY);
+	}
+
 	RestoreDC(target, saved);
 }
 

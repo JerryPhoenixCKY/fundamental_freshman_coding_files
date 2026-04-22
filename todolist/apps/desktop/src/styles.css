@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap");
+
+:root {
+  --bg-1: #072138;
+  --bg-2: #0d3a5a;
+  --accent: #f6c96b;
+  --accent-2: #6bd3ff;
+  --text-main: #f4f7fb;
+  --text-soft: #c1d3e4;
+  --panel: rgba(10, 28, 46, 0.75);
+  --panel-border: rgba(255, 255, 255, 0.14);
+  --danger: #ff706b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Manrope", "Noto Sans SC", sans-serif;
+  color: var(--text-main);
+  background:
+    radial-gradient(circle at 10% 20%, rgba(107, 211, 255, 0.24), transparent 35%),
+    radial-gradient(circle at 90% 80%, rgba(246, 201, 107, 0.2), transparent 40%),
+    linear-gradient(140deg, var(--bg-1), var(--bg-2));
+}
+
+#app {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.app-shell {
+  display: grid;
+  grid-template-columns: 360px minmax(460px, 1fr);
+  gap: 16px;
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.left-column,
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.clock-panel,
+.quick-add,
+.todo-list {
+  border: 1px solid var(--panel-border);
+  background: var(--panel);
+  border-radius: 18px;
+  -webkit-backdrop-filter: blur(9px);
+  backdrop-filter: blur(9px);
+}
+
+.clock-panel {
+  padding: 20px;
+}
+
+.clock-label {
+  margin: 0;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: var(--accent-2);
+}
+
+.clock-time {
+  margin: 10px 0 4px;
+  font-family: "Space Grotesk", "Noto Sans SC", sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.clock-date {
+  margin: 0;
+  color: var(--text-soft);
+}
+
+.quick-add {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.field {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  background: rgba(5, 16, 30, 0.65);
+  color: var(--text-main);
+  padding: 10px 12px;
+  font: inherit;
+}
+
+.field-notes {
+  min-height: 68px;
+  resize: vertical;
+}
+
+.row {
+  display: grid;
+  gap: 10px;
+}
+
+.two-col {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.action-row {
+  grid-template-columns: 1fr auto;
+  align-items: end;
+}
+
+label span {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--text-soft);
+  font-size: 12px;
+}
+
+.primary-btn,
+.danger-btn,
+.check-btn {
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+}
+
+.primary-btn {
+  padding: 10px 16px;
+  background: linear-gradient(140deg, var(--accent), #ffd992);
+  color: #11253a;
+}
+
+.todo-list {
+  padding: 16px;
+}
+
+.reminder-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.reminder-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: flex-start;
+  border: 1px solid rgba(246, 201, 107, 0.45);
+  border-radius: 12px;
+  padding: 10px 12px;
+  background: rgba(246, 201, 107, 0.12);
+}
+
+.reminder-title {
+  margin: 0;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ffe5b0;
+}
+
+.reminder-task {
+  margin: 4px 0;
+  font-weight: 700;
+}
+
+.reminder-time {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 12px;
+}
+
+.ghost-btn {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  background: transparent;
+  color: var(--text-main);
+  padding: 6px 10px;
+  cursor: pointer;
+  font: inherit;
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.list-header h2 {
+  margin: 0;
+  font-family: "Space Grotesk", "Noto Sans SC", sans-serif;
+  font-size: 24px;
+}
+
+.status {
+  margin: 0;
+  color: var(--text-soft);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-item {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  background: rgba(0, 0, 0, 0.14);
+}
+
+.task-main {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+}
+
+.check-btn {
+  height: fit-content;
+  padding: 7px 10px;
+  background: #153a57;
+  color: var(--accent-2);
+}
+
+.check-btn.done {
+  background: #2f6541;
+  color: #d8ffe5;
+}
+
+.task-title {
+  margin: 0;
+  font-weight: 700;
+}
+
+.task-title.done {
+  text-decoration: line-through;
+  color: var(--text-soft);
+}
+
+.task-meta {
+  margin: 2px 0;
+  font-size: 12px;
+  color: var(--text-soft);
+}
+
+.danger-btn {
+  background: rgba(255, 112, 107, 0.14);
+  color: var(--danger);
+  padding: 8px 12px;
+  height: fit-content;
+}
+
+.error-banner {
+  margin: 0;
+  border: 1px solid rgba(255, 112, 107, 0.6);
+  border-radius: 12px;
+  padding: 10px 12px;
+  background: rgba(255, 112, 107, 0.14);
+  color: #ffd9d7;
+}
+
+@media (max-width: 980px) {
+  .app-shell {
+    grid-template-columns: 1fr;
+  }
+}

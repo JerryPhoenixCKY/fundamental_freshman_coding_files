@@ -1,0 +1,59 @@
+Sprint: 2026-04-22 / Implementation Start
+
+Done:
+- Created monorepo workspace under todolist
+- Added desktop frontend shell (Vue + Vite)
+- Added backend API skeleton (NestJS)
+- Added Tauri Rust scaffold files for desktop shell
+- Added baseline docs and run instructions
+
+Current scope implemented:
+- Desktop UI shell: clock panel, quick add form, task list
+- Task fields: title, notes, due time, reminder time, priority
+- Backend endpoints:
+	- GET /api/health
+	- POST /api/auth/send-code
+	- POST /api/auth/verify-code
+	- GET /api/tasks
+	- POST /api/tasks
+	- PATCH /api/tasks/:id
+	- PATCH /api/tasks/:id/toggle
+	- DELETE /api/tasks/:id
+
+Known gap:
+- Rust toolchain is not installed on this machine, so Tauri binary build is pending
+
+Next steps:
+1. Install Rust toolchain (rustup) and validate tauri dev
+2. Replace in-memory tasks with SQLite persistence
+3. Add reminder scheduler and local notification trigger loop
+4. Implement auth/token persistence and sync queue foundation
+
+Config pass: 2026-04-22
+
+Auto-configured now:
+- Added root one-command dev script (desktop + server together)
+- Added runtime env support for server port, API prefix, CORS origins
+- Added env support for auth code expiry window
+- Added env support for desktop dev port
+- Created local default env files for desktop and server
+- Added configuration handbook: CONFIGURATION.md
+
+Manual config still required:
+1. Install Rust toolchain (rustc/cargo)
+2. Install Tauri Windows prerequisites (Build Tools, WebView2 runtime)
+3. Configure production code signing certificate for release builds
+
+Feature pass: 2026-04-22 (continue)
+
+Done now:
+- Migrated task storage from in-memory to SQLite (node:sqlite, file path from SQLITE_PATH)
+- Added reminder persistence table (ack events) and due-reminder query logic
+- Added APIs:
+	- GET /api/tasks/reminders/due
+	- POST /api/tasks/:id/reminders/ack
+- Added desktop reminder engine polling backend due reminders
+- Added desktop reminder UX: browser notification, sound beep, dismissible reminder cards
+- Added new env config:
+	- server: SQLITE_PATH
+	- desktop: VITE_REMINDER_POLL_MS, VITE_REMINDER_SOUND

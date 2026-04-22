@@ -1,0 +1,19 @@
+{
+  "name": "desktop-todolist-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -n server,desktop -c cyan,magenta \"npm run dev:server\" \"npm run dev:desktop\"",
+    "dev:desktop": "npm run dev --workspace @todolist/desktop",
+    "dev:server": "npm run start:dev --workspace @todolist/server",
+    "build:desktop": "npm run build --workspace @todolist/desktop",
+    "build:server": "npm run build --workspace @todolist/server",
+    "check": "npm run build:server && npm run build:desktop"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
