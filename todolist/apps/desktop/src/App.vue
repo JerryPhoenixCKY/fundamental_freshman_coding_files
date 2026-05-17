@@ -1,18 +1,31 @@
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
+import { onMounted, ref, watch } from "vue";
 import ClockPanel from "./components/ClockPanel.vue";
 import QuickAdd from "./components/QuickAdd.vue";
 import TodoList from "./components/TodoList.vue";
+import AuthPanel from "./components/AuthPanel.vue";
 import { useReminderEngine } from "./composables/useReminderEngine";
 import { createTask, fetchTasks, removeTask, toggleTask } from "./api";
 import type { CreateTaskInput, TaskItem } from "./types";
 
+const token = ref(localStorage.getItem("token") || "");
 const tasks = ref<TaskItem[]>([]);
 const loading = ref(false);
 const error = ref("");
 const { notices, dismissNotice } = useReminderEngine(tasks);
 
+watch(token, (newVal) => {
+  if (newVal) {
+    localStorage.setItem("token", newVal);
+    void loadTasks();
+  } else {
+    localStorage.removeItem("token");
+    tasks.value = [];
+  }
+});
+
 async function loadTasks() {
+  if (!token.value) return;
   loading.value = true;
   error.value = "";
   try {
@@ -55,18 +68,28 @@ async function handleRemove(id: string) {
 }
 
 onMounted(() => {
-  void loadTasks();
+  if (token.value) {
+    void loadTasks();
+  }
 });
 </script>
 
 <template>
-  <main class="app-shell">
-    <section class="left-column">
+  <main class="app-shell relative">
+    <div v-if="!token" class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 overflow-hidden">
+      <AuthPanel class="bg-white" @login="(t: string) => token = t" />
+    </div>
+
+    <section class="left-column opacity-30" :class="{ '!opacity-100': token }">
       <ClockPanel />
       <QuickAdd @submit="handleCreate" />
     </section>
 
-    <section class="right-column">
+    <div v-if="token" class="absolute top-4 right-4 flex gap-2 items-center">
+      <button @click="token = ''" class="px-2 py-1 text-xs border rounded bg-white text-gray-700 hover:bg-gray-100">Sign Out</button>
+    </div>
+
+    <section class="right-column opacity-30" :class="{ '!opacity-100': token }">
       <section v-if="notices.length" class="reminder-stack">
         <article v-for="notice in notices" :key="notice.id" class="reminder-item">
           <div>

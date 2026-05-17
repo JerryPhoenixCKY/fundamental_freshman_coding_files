@@ -1,0 +1,131 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import tensorflow as tf
+
+SEED = 42
+NUM_SAMPLES = 10000
+EPOCHS = 400
+BATCH_SIZE = 64
+LEARNING_RATE = 0.005
+X_SCALE = 10.0
+Z_SCALE = 900.0
+
+
+def scale_inputs(x_vals, y_vals):
+	return x_vals / X_SCALE, y_vals / X_SCALE
+
+
+def scale_outputs(z_vals):
+	return z_vals / Z_SCALE
+
+
+def descale_outputs(z_vals):
+	return z_vals * Z_SCALE
+
+
+def generate_data(num_samples=NUM_SAMPLES, seed=SEED):
+	rng = np.random.default_rng(seed)
+	x = rng.uniform(-10, 10, num_samples)
+	y = rng.uniform(-10, 10, num_samples)
+	z = (2 * x - y) ** 2  # Target function: z = (2x - y)^2
+	return x, y, z
+
+
+def build_model():
+	model = tf.keras.Sequential(
+		[
+			tf.keras.layers.Input(shape=(2,)),
+			tf.keras.layers.Dense(64, activation="relu"),
+			tf.keras.layers.Dense(64, activation="relu"),
+			tf.keras.layers.Dense(32, activation="relu"),
+			tf.keras.layers.Dense(1),
+		]
+	)
+	# SGD uses the gradient descent update rule: w <- w - lr * grad
+	optimizer = tf.keras.optimizers.SGD(
+		learning_rate=LEARNING_RATE,
+		momentum=0.9,
+		nesterov=True,
+		clipnorm=1.0,
+	)
+	model.compile(optimizer=optimizer, loss="mse")
+	return model
+
+
+def train_model(model, x_train, y_train, z_train, epochs=EPOCHS):
+	inputs = np.stack((x_train, y_train), axis=1)
+	history = model.fit(inputs, z_train, epochs=epochs, batch_size=BATCH_SIZE, verbose=0)
+	return history
+
+
+def predict(model, x_vals, y_vals):
+	inputs = np.stack((x_vals, y_vals), axis=1)
+	return model.predict(inputs, verbose=0).ravel()
+
+
+def main():
+	tf.random.set_seed(SEED)
+
+	# 1) Generate training data
+	x_train, y_train, z_train = generate_data()
+	x_train_scaled, y_train_scaled = scale_inputs(x_train, y_train)
+	z_train_scaled = scale_outputs(z_train)
+
+	# 2) Build and train the neural network
+	model = build_model()
+	history = train_model(model, x_train_scaled, y_train_scaled, z_train_scaled)
+
+	final_train_loss = float(history.history["loss"][-1])
+	best_train_loss = float(np.min(history.history["loss"]))
+
+	# 3) Evaluate on a grid for visualization
+	x_grid, y_grid = np.meshgrid(np.linspace(-10, 10, 60), np.linspace(-10, 10, 60))
+	x_flat = x_grid.ravel()
+	y_flat = y_grid.ravel()
+	x_flat_scaled, y_flat_scaled = scale_inputs(x_flat, y_flat)
+	z_true = (2 * x_flat - y_flat) ** 2
+	z_pred_scaled = predict(model, x_flat_scaled, y_flat_scaled)
+	z_pred = descale_outputs(z_pred_scaled)
+	grid_errors = z_true - z_pred
+	test_mse = float(np.mean(grid_errors ** 2))
+	grid_total_sse = float(np.sum(grid_errors ** 2))
+
+	# 4) Print required explanation and loss values
+	print("Network setup and training parameters:")
+	print("- Model: Input(2) -> Dense(64, relu) -> Dense(64, relu) -> Dense(32, relu) -> Dense(1)")
+	print(f"- Optimizer: SGD (gradient descent), learning rate = {LEARNING_RATE}")
+	print(f"- Epochs: {EPOCHS}, Batch size: {BATCH_SIZE}, Training samples: {NUM_SAMPLES}")
+	print(f"- Final training MSE (scaled): {final_train_loss:.6f}")
+	print(f"- Best training MSE (scaled): {best_train_loss:.6f}")
+	print(f"- Grid test MSE (original scale, total loss): {test_mse:.6f}")
+	print(f"- Grid total loss (sum of squared errors): {grid_total_sse:.6f}")
+	if test_mse < 5.0:
+		print("- Success: total loss < 5.0")
+	else:
+		print("- Warning: total loss >= 5.0")
+
+	# 5) Plot the true function and the NN approximation
+	fig = plt.figure(figsize=(14, 6))
+
+	ax1 = fig.add_subplot(121, projection="3d")
+	sc1 = ax1.scatter(x_flat, y_flat, z_true, c=z_true, cmap="viridis", s=5)
+	ax1.set_title("Ideal Function: z = (2x - y)^2")
+	ax1.set_xlabel("x")
+	ax1.set_ylabel("y")
+	ax1.set_zlabel("z")
+	plt.colorbar(sc1, ax=ax1, shrink=0.5, aspect=5)
+
+	ax2 = fig.add_subplot(122, projection="3d")
+	sc2 = ax2.scatter(x_flat, y_flat, z_pred, c=z_pred, cmap="viridis", s=5)
+	ax2.set_title("NN-Learned Function")
+	ax2.set_xlabel("x")
+	ax2.set_ylabel("y")
+	ax2.set_zlabel("z")
+	plt.colorbar(sc2, ax=ax2, shrink=0.5, aspect=5)
+
+	plt.tight_layout()
+	plt.show()
+
+
+if __name__ == "__main__":
+	main()

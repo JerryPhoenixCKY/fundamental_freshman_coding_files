@@ -3,12 +3,20 @@ import type { CreateTaskInput, TaskItem } from "./types";
 const API_BASE = import.meta.env.VITE_API_BASE ?? "http://localhost:3000/api";
 
 async function request<T>(path: string, init?: RequestInit): Promise<T> {
+  const token = localStorage.getItem("token");
+  
+  const headers: Record<string, string> = {
+    "Content-Type": "application/json",
+    ...(init?.headers as Record<string, string> ?? {})
+  };
+
+  if (token) {
+    headers["Authorization"] = `Bearer ${token}`;
+  }
+
   const response = await fetch(`${API_BASE}${path}`, {
-    headers: {
-      "Content-Type": "application/json",
-      ...(init?.headers ?? {})
-    },
-    ...init
+    ...init,
+    headers,
   });
 
   if (!response.ok) {
@@ -50,5 +58,19 @@ export async function fetchDueReminders(limit = 20): Promise<TaskItem[]> {
 export async function acknowledgeReminder(taskId: string): Promise<{ success: boolean }> {
   return request<{ success: boolean }>(`/tasks/${taskId}/reminders/ack`, {
     method: "POST"
+  });
+}
+
+export async function sendAuthCode(email: string): Promise<{ sent: boolean, debugCode?: string }> {
+  return request<{ sent: boolean, debugCode?: string }>("/auth/send-code", {
+    method: "POST",
+    body: JSON.stringify({ email })
+  });
+}
+
+export async function verifyAuthCode(email: string, code: string): Promise<{ accessToken: string }> {
+  return request<{ accessToken: string }>("/auth/verify-code", {
+    method: "POST",
+    body: JSON.stringify({ email, code })
   });
 }

@@ -25,9 +25,8 @@ Known gap:
 
 Next steps:
 1. Install Rust toolchain (rustup) and validate tauri dev
-2. Replace in-memory tasks with SQLite persistence
-3. Add reminder scheduler and local notification trigger loop
-4. Implement auth/token persistence and sync queue foundation
+2. Configure production code signing certificate for release builds
+3. Implement PostgreSQL + Redis sync queue foundation (Backend)
 
 Config pass: 2026-04-22
 
@@ -39,10 +38,19 @@ Auto-configured now:
 - Created local default env files for desktop and server
 - Added configuration handbook: CONFIGURATION.md
 
+Feature pass: 2026-04-23 (Auth & JWT)
+
+Done now:
+- Installed @nestjs/jwt and implemented true authentication for backend
+- Replaced base64 placeholder with signed JWTs (7-day expiry)
+- Secured all `/tasks` routes behind `JwtAuthGuard`
+- Added `AuthPanel.vue` frontend login screen with code sending and verification
+- Implemented frontend token persistence in `localStorage`
+- Protected API calls by injecting the Bearer Token
+
 Manual config still required:
 1. Install Rust toolchain (rustc/cargo)
 2. Install Tauri Windows prerequisites (Build Tools, WebView2 runtime)
-3. Configure production code signing certificate for release builds
 
 Feature pass: 2026-04-22 (continue)
 

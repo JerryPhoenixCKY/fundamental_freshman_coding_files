@@ -1,4 +1,5 @@
 import { BadRequestException, Injectable } from "@nestjs/common";
+import { JwtService } from "@nestjs/jwt";
 
 interface PendingCode {
   code: string;
@@ -9,6 +10,8 @@ interface PendingCode {
 export class AuthService {
   private readonly pendingCodes = new Map<string, PendingCode>();
   private readonly expiresInMs = this.resolveExpiresInMs();
+
+  constructor(private jwtService: JwtService) {}
 
   private resolveExpiresInMs(): number {
     const parsed = Number(process.env.AUTH_CODE_EXPIRES_SECONDS ?? 300);
@@ -33,7 +36,7 @@ export class AuthService {
     };
   }
 
-  verifyCode(email: string, code: string) {
+  async verifyCode(email: string, code: string) {
     const pending = this.pendingCodes.get(email);
 
     if (!pending) {
@@ -51,13 +54,10 @@ export class AuthService {
 
     this.pendingCodes.delete(email);
 
-    const tokenPayload = JSON.stringify({
-      email,
-      loginAt: new Date().toISOString()
-    });
+    const payload = { email, sub: email };
 
     return {
-      accessToken: Buffer.from(tokenPayload).toString("base64url")
+      accessToken: await this.jwtService.signAsync(payload)
     };
   }
 }
