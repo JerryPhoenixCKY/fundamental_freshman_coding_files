@@ -1,4 +1,9 @@
 {
     "python-envs.defaultEnvManager": "ms-python.python:system",
-    "C_Cpp.default.compilerPath": "D:/winlibs GCC/mingw64/bin/gcc.exe"
+    "C_Cpp.default.compilerPath": "D:/winlibs GCC/mingw64/bin/gcc.exe",
+    "python.analysis.extraPaths": [
+        "./deep_learning/d2l-en/jax",
+        "./deep_learning/d2l-en/pytorch/d2l"
+    ],
+    "python-envs.defaultPackageManager": "ms-python.python:pip"
 }

@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "test board",
+			"path": "../28695/OneDrive - CUHK-Shenzhen/文档/PlatformIO/Projects/test board"
+		}
+	],
+	"settings": {
+		"python-envs.defaultEnvManager": "ms-python.python:system"
+	}
+}
